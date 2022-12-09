@@ -2,7 +2,7 @@
 // Licensed under the General Public License, Version 3.0, see LICENSE for details.
 // SPDX-License-Identifier: GPL-3.0-only
 
-#include "Vauxy_noerr_rv_core_ibex.h"
+#include "Vauxy_ibex_top.h"
 #include "verilated.h"
 
 #if VM_TRACE
@@ -25,7 +25,7 @@
 const int kTraceLevel = 6;
 #endif // VM_TRACE
 
-typedef Vauxy_noerr_rv_core_ibex Module;
+typedef Vauxy_ibex_top Module;
 
 typedef struct {
 // Mem top
@@ -65,36 +65,78 @@ typedef struct {
   // uint64_t test_en_i_t0;
 
 // Rv core
+  // uint64_t boot_addr_i;
+  // uint64_t boot_addr_i_t0;
+  // uint64_t clk_esc_i;
+  // uint64_t clk_esc_i_t0;
+  // uint64_t clk_i;
+  // uint64_t debug_req_i;
+  // uint64_t debug_req_i_t0;
+  // uint64_t esc_tx_i;
+  // uint64_t esc_tx_i_t0;
+  // uint64_t hart_id_i;
+  // uint64_t hart_id_i_t0;
+  // uint64_t irq_external_i;
+  // uint64_t irq_external_i_t0;
+  // uint64_t irq_software_i;
+  // uint64_t irq_software_i_t0;
+  // uint64_t irq_timer_i;
+  // uint64_t irq_timer_i_t0;
+  // uint64_t lc_cpu_en_i;
+  // uint64_t lc_cpu_en_i_t0;
+  // uint64_t ram_cfg_i;
+  // uint64_t ram_cfg_i_t0;
+  // uint64_t rst_esc_ni;
+  // uint64_t rst_esc_ni_t0;
+  // uint64_t rst_ni;
+  // uint64_t test_en_i;
+  // uint64_t test_en_i_t0;
+  // uint64_t tl_d_i[2];
+  // uint64_t tl_d_i_t0[2];
+  // uint64_t tl_i_i[2];
+  // uint64_t tl_i_i_t0[2];
+
+// u_core
   uint64_t boot_addr_i;
   uint64_t boot_addr_i_t0;
-  uint64_t clk_esc_i;
-  uint64_t clk_esc_i_t0;
   uint64_t clk_i;
+  uint64_t data_err_i;
+  uint64_t data_err_i_t0;
+  uint64_t data_gnt_i;
+  uint64_t data_gnt_i_t0;
+  uint64_t data_rdata_i;
+  uint64_t data_rdata_i_t0;
+  uint64_t data_rvalid_i;
+  uint64_t data_rvalid_i_t0;
   uint64_t debug_req_i;
   uint64_t debug_req_i_t0;
-  uint64_t esc_tx_i;
-  uint64_t esc_tx_i_t0;
+  uint64_t fetch_enable_i;
+  uint64_t fetch_enable_i_t0;
   uint64_t hart_id_i;
   uint64_t hart_id_i_t0;
+  uint64_t instr_err_i;
+  uint64_t instr_err_i_t0;
+  uint64_t instr_gnt_i;
+  uint64_t instr_gnt_i_t0;
+  uint64_t instr_rdata_i;
+  uint64_t instr_rdata_i_t0;
+  uint64_t instr_rvalid_i;
+  uint64_t instr_rvalid_i_t0;
   uint64_t irq_external_i;
   uint64_t irq_external_i_t0;
+  uint64_t irq_fast_i;
+  uint64_t irq_fast_i_t0;
+  uint64_t irq_nm_i;
+  uint64_t irq_nm_i_t0;
   uint64_t irq_software_i;
   uint64_t irq_software_i_t0;
   uint64_t irq_timer_i;
   uint64_t irq_timer_i_t0;
-  uint64_t lc_cpu_en_i;
-  uint64_t lc_cpu_en_i_t0;
   uint64_t ram_cfg_i;
   uint64_t ram_cfg_i_t0;
-  uint64_t rst_esc_ni;
-  uint64_t rst_esc_ni_t0;
   uint64_t rst_ni;
   uint64_t test_en_i;
   uint64_t test_en_i_t0;
-  uint64_t tl_d_i[2];
-  uint64_t tl_d_i_t0[2];
-  uint64_t tl_i_i[2];
-  uint64_t tl_i_i_t0[2];
 
   } single_input_recording_t;
 

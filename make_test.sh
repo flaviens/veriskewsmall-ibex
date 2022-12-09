@@ -1,1 +1,1 @@
-make -C obj_dir -f Vauxy_noerr_rv_core_ibex.mk Vauxy_noerr_rv_core_ibex -j 250
+make -C obj_dir -f Vauxy_ibex_top.mk Vauxy_ibex_top -j 250
