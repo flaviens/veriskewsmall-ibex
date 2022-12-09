@@ -1,1 +1,1 @@
-make -C obj_dir -f Vibex_mem_top.mk Vibex_mem_top -j 250
+make -C obj_dir -f Vauxy_noerr_rv_core_ibex.mk Vauxy_noerr_rv_core_ibex -j 250

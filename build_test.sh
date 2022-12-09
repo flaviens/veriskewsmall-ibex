@@ -30,7 +30,7 @@ TRACE_FLAGS="--trace-fst \
 --trace-params \
 --trace-max-array 1024"
 
-SV_FILES=src/ibex_mem_top.sv
+SV_FILES=src/auxy_noerr_rv_core_ibex.sv
 
 verilator -fno-inline --cc $SV_FILES $WARNING_FLAGS $TRACE_FLAGS \
     --exe -Idv $CC_FILES \
